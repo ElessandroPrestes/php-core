@@ -20,4 +20,4 @@ Uma imagem Docker otimizada com **PHP 8.3-FPM**, criada para servir como base pa
 Você pode baixar a imagem diretamente do Docker Hub com o seguinte comando:
 
 ```bash
-docker pull elessandrodev/php-core:php8.3
+docker pull elessandrodev/php-core:v1.0.1

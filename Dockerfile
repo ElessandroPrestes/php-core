@@ -55,9 +55,4 @@ WORKDIR /var/www
 COPY . .
 
 # Aplica permissões de leitura e escrita
-RUN set -eux; \
-    chown -R www-data:www-data /var/www; \
-    chmod -R 775 /var/www; \
-    if [ -d storage ]; then chmod -R 775 storage; chown -R www-data:www-data storage; fi; \
-    if [ -d bootstrap/cache ]; then chmod -R 775 bootstrap/cache; chown -R www-data:www-data bootstrap/cache; fi
-
+RUN chmod -R 775 /var/www
